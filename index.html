@@ -44,6 +44,11 @@
       height: 40px;
     }
 
+    .nav {
+      display: flex;
+      align-items: center;
+    }
+
     .nav a {
       margin-left: 20px;
       font-weight: 900;
@@ -164,9 +169,6 @@
 
     @media (max-width:1023px) {
       
-      .sidebar {
-        display: none;
-      }
       .main-content {
         margin: 0;
       }
@@ -177,6 +179,13 @@
     }
 
     @media (max-width:767px) {
+      
+      header {
+        padding: 18px 9px;
+      }
+      .sidebar {
+        display: none;
+      }
       .nav a {
       margin-left: 0;
       font-size: 14px;
