@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard - PakWapp</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - PakWapp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div>
-    <img src="Pakwapp.png" alt="PakWapp" class="logo">
-  </div>
-  <div class="nav">
-    <a href="#"><i class="fas fa-home"></i> <span>Dashboard</span></a>
-    <a href="#"><i class="fas fa-project-diagram"></i><span>Projects</span></a>
-    <a href="#"><i class="fas fa-user"></i> <span>Profile</span></a>
-  </div>
-</header>
-<div class="sidebar">
-  <a href="#"><i class="fas fa-chart-pie"></i> Overview</a>
-  <a href="#"><i class="fas fa-tasks"></i> My Tasks</a>
-  <a href="#"><i class="fas fa-file-alt"></i> Assignments</a>
-  <a href="#"><i class="fas fa-cog"></i> Settings</a>
-</div>
-
-<main class="main-content">
-  <h1 class="main-title">My Dashboard</h1>
-
-  <div class="tasks-container">
-    <div class="task-card" >
-      <h3>Make Video Player</h3>
-      <p>Due: Jun 10, 2025</p>
-      <div class="status in-progress"><i class="fas fa-sync-alt"></i> In Progress</div>
-    </div>
-
-    <div class="task-card" >
-      <h3>UI/UX Design</h3>
-      <p>Due: Jun 10, 2025</p>
-      <div class="status in-progress"><i class="fas fa-sync-alt"></i> In Progress</div>
-    </div>
-
-    <div class="task-card" >
-      <h3>Fix Bugs in Scripts</h3>
-      <p>Due: Jun 10, 2025</p>
-      <div class="status pending"><i class="fas fa-clock"></i> Pending</div>
-    </div>
-
-    <div class="task-card" >
-      <h3>Make JavaScripts</h3>
-      <p>Due: Jun 10, 2025</p>
-      <div class="status completed"><i class="fas fa-check-circle"></i> Completed</div>
-    </div>
+    <header> 
+        <div class="logo"><div class="logo-icon">W</div><p>eb<b>hoz</b></p> </div>
+        <nav class="nav">
+        <a href="#"><i class="fa-solid fa-house"></i><span>Dashboard</span></a>
+        <a href="#"><i class="fa-solid fa-diagram-project"></i><span>Project</span></a>
+        <a href="#"><i class="fa-solid fa-user"></i><span>Profile</span></a>
+        </nav>
+    </header>
     
-    <div class="task-card" >
-      <h3>Make Cloud Server</h3>
-      <p>Due: Jun 10, 2025</p>
-      <div class="status completed"><i class="fas fa-check-circle"></i> Completed</div>
-    </div>
+    <aside>
+        <a href="#"><i class="fa-solid fa-chart-pie"></i>Overview</a>
+        <a href="#"><i class="fa-solid fa-chart-simple"></i>Performance</a>
+        <a href="#"><i class="fa-solid fa-list-check"></i>My Tasks</a>
+        <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+    </aside>
 
-    <div class="task-card" >
-      <h3>Make Simple Website</h3>
-      <p>Due: Jun 10, 2025</p>
-      <div class="status completed"><i class="fas fa-check-circle"></i> Completed</div>
-    </div>
-  </div>
-</main>
+    <main>
 
-<footer>© 2025 PakWapp. All rights reserved.</footer>
+        <h2>My Dashboard</h2>
+        <div class="tasks-container">
+
+            <div class="task-card" >
+                <h3>Make Video Player</h3>
+                <p>Due: Jun 10, 2025</p>
+                <div class="status in-progress"><i class="fas fa-sync-alt"></i> In Progress</div>
+            </div>
+
+            <div class="task-card" >
+                <h3>UI/UX Design</h3>
+                <p>Due: Jun 10, 2025</p>
+                <div class="status in-progress"><i class="fas fa-sync-alt"></i> In Progress</div>
+            </div>
+
+            <div class="task-card" >
+                <h3>Fix Bugs in Scripts</h3>
+                <p>Due: Jun 10, 2025</p>
+                <div class="status pending"><i class="fas fa-clock"></i> Pending</div>
+            </div>
+
+            <div class="task-card" >
+                <h3>Make JavaScripts</h3>
+                <p>Due: Jun 10, 2025</p>
+                <div class="status completed"><i class="fas fa-check-circle"></i> Completed</div>
+            </div>
+
+            <div class="task-card" >
+                <h3>Make Cloud Server</h3>
+                <p>Due: Jun 10, 2025</p>
+                <div class="status completed"><i class="fas fa-check-circle"></i> Completed</div>
+            </div>
+
+            <div class="task-card">
+                <h3>Make simple website</h3>
+                <p>Due: Jun 10, 2025</p>
+                <div class="status completed"><i class="fa-solid fa-circle-check"></i>Completed</div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>&copy; 2025 PakWapp. All rights reserved.</footer>
+
 </body>
 </html>
