@@ -1,230 +1,250 @@
 * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #f0f4f8, #e5e9f2);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+ .logo p {
+    font-size: 38px;
+    color: #0066FF;
+    
+ }
+
+ .logo-icon {
+   display: flex;
+   align-items: end;
+   justify-content: center;
+    font-size: 36px;
+    color: #fff;
+    background: #0066FF;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+ }
+ 
+ .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+ }
+
+ .nav a {
+
+    color: #444;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 14px;
+    transition: all 40ms ease-in;
+ }
+
+ .nav a:nth-child(1) {
+    color: #fff;
+    background-color: #0066ff;
+ }
+
+ .nav a:hover {
+    color: #0066FF;
+    background: transparent;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+ }
+
+ .fa-solid, .fas {
+    margin-right: 10px;
+ }
+
+ aside {
+    padding-top: 30px;
+    background: #0066ff;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+ }
+
+ aside a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 16px 20px;
+    margin: 10px 20px;
+    border-radius: 14px;
+    transition: all 40ms ease-in;
+ }
+
+ aside a:nth-child(1) {
+    color: #0066ff;
+    background: linear-gradient(140deg, rgba(255, 255, 255), rgba(240, 244, 248, 0.7));
+ }
+
+ aside a:hover {
+    color: #fff;
+    background: #0052cc;
+ }
+
+ main {
+    margin-left: 250px;
+    min-height: calc(100vh - 128px);
+    padding: 30px;
+ }
+
+ main h2 {
+    margin-bottom: 20px;
+ }
+
+ .tasks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+ }
+
+ .task-card {
+    background: linear-gradient(140deg, rgba(255, 255, 255), rgba(240, 244, 248, 0.7));
+    width: 31%;
+    padding: 20px;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 40ms ease-in;
+    margin: auto;
+ }
+
+ .task-card:hover {
+    transform: scale(1.04);
+ }
+
+ .task-card h3 {
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 12px;
+ }
+
+ .task-card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+ }
+
+ .status {
+    display: initial;
+    padding: 4px 8px;
+    font-size: 13px;
+    margin-bottom: 12px;
+    border-radius: 64px;
+ }
+
+ .completed {
+    background: rgba(0, 200, 83, 0.1);
+    color: #00C853;
+ }
+
+ .in-progress {
+    background: rgba(0, 102, 255, 0.1);
+    color: #0066FF;
+ }
+
+ .pending {
+    background: rgba(255, 149, 0, 0.1);
+    color: #FF9500;
+ }
+
+ footer {
+    margin-left: 250px;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    background: #f0f4f8;
+    color: #444;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+ }
+
+ @media (max-width:1023px) {
+
+    aside {
+        width: 200px;
+        padding-top: 20px;
+    }
+    
+    aside a {
+        margin: 5px 10px;
     }
 
-    body, html {
-      height: 100%;
-      width: 100%;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(180deg, #f0f4f8, #e5e9f2);
-      color: #1A1A1A;
-      overflow-x: hidden;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      background: #fff;
-      padding: 8px 24px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-      position: sticky;
-      top: 0;
-    }
-
-    .logo {
-      height: 32px;
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .fa-solid, .fas {
-      margin-right: 9px;
-    }
-
-    .nav a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: #666666;
-      font-weight: 500;
-      font-size: 14px;
-      padding: 14px;
-      border-radius: 16px;
-      transition: all 0.1s ease;
-    }
-
-    .nav a:hover {
-      color: #0066FF;
-      background: #E6F0FF;
-    }
-
-    .sidebar {
-      width: 240px;
-      position: fixed;
-      height: 100vh;
-      background: #0066FF;
-      padding: 16px 0;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    }
-
-    .sidebar a {
-      display: flex;
-      margin: 4px 16px;
-      align-items: center;
-      text-decoration: none;
-      color: #fff;
-      font-weight: 500;
-      font-size: 16px;
-      padding: 16px;
-      transition: all 0.1s ease;
-      border-radius: 16px;
-    }
-
-    .sidebar a:nth-child(1) {
-      color: #0066FF;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(240, 244, 248, 0.9));
-      font-weight: 600;
-    }
-
-    .sidebar a:hover {
-      background: rgba(0, 0, 0, 0.4);
-      color: #fff;
-    }
-
-    .sidebar a i {
-      margin-right: 12px;
-      width: 20px;
-      text-align: center;
-    }
-
-    .main-content {
-      margin-left: 240px;
-      padding: 24px;
-      min-height: calc(100vh - 110px);
-      transition: margin 0.1s ease;
-    }
-
-    .main-title {
-      font-weight: 700;
-      color: #1A1A1A;
-      font-size: 28px;
-      margin-bottom: 24px;
-    }
-
-    .tasks-container {
-      display: flex;
-      flex-wrap: wrap;
+    main {
+        margin-left: 200px;
     }
 
     .task-card {
-      width: 31%;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(240, 244, 248, 0.9));
-      padding: 20px;
-      margin: 8px auto;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      transition: all 0.1s ease;
-      cursor: pointer;
-    }
-
-    .task-card:hover {
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    }
-
-    .task-card h3 {
-      font-weight: 900;
-      font-size: 24px;
-      margin-bottom: 8px;
-    }
-
-    .task-card p {
-      color: #666666;
-      font-size: 13px;
-      margin-bottom: 12px;
-    }
-
-    .status {
-      display: initial;
-      align-items: center;
-      padding: 6px 12px;
-      font-weight: 500;
-      font-size: 12px;
-      border-radius: 100px;
-    }
-
-    .status i {
-      margin-right: 6px;
-      font-size: 10px;
-    }
-
-    .in-progress {
-      background: rgba(0, 102, 255, 0.1);
-      color: #0066FF;
-    }
-
-    .pending {
-      background: rgba(255, 149, 0, 0.1);
-      color: #FF9500;
-    }
-
-    .completed {
-      background: rgba(0, 200, 83, 0.1);
-      color: #00C853;
+        width: 45%;
     }
 
     footer {
-      background: linear-gradient(270deg, rgba(255, 255, 255, 0.95), rgba(240, 244, 248, 0.9));
-      color: #666666;
-      text-align: center;
-      padding: 16px;
-      font-size: 13px;
-      margin-left: 240px;
-      border-top: 1px solid rgba(0, 0, 0, 0.05);
-    }
-
-    @media (max-width: 1024px) {
-
-      .main-content, footer {
         margin-left: 200px;
-      }
-
-      .task-card {
-        width: 45%;
-      }
-
-      .sidebar {
-        width: 200px;
-      }
     }
 
-    @media (max-width: 767px) {
-      header {
-        padding: 12px 16px;
-      }
+ }
 
-      .main-content, footer {
-        margin-left: 0;
-      }
+ @media (max-width:767px) {
 
-      .sidebar {
+   header {
+      padding: 10px 15px ;
+   }
+
+    .nav span {
         display: none;
-      }
+    }
 
-      .fa-solid, .fas {
-        margin-right: 0;
-      }
+    .nav a {
+      padding: 10px;
+    }
 
-      .nav span {
+    .nav .fa-solid, .fas {
+        margin: 0;
+    }
+
+    aside {
         display: none;
-      }
+    }
 
-      .main-content {
-        padding: 16px;
-      }
-      
-      .main-title {
-        font-size: 28px;
-      }
+    main {
+        margin: 0;
+        padding: 20px;
+    }
 
-      .task-card {
+    .task-card {
         width: 100%;
-      }
     }
+
+    footer {
+        margin: 0;
+    }
+
+ }
